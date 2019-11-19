@@ -2,11 +2,88 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Мобильное приложение Пинк</title>
   </head>
   <body>
+    <header class="page-header">
+        <h1 class="visually-hidden">Главная страница Пинк</h1>
+        <a class="page-header__logo">
+          <svg class="page-header__logo-image" width="50" height="30"></svg>
+        </a>
+        <button class="page-header__toggle" type="button">
+          <svg class="page-header__toggle-opened" width="50" height="30"></svg>
+        </button>
+        <nav class="main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru">HTML ACADEMY</a>
+            </li>
+          </ul>
+        </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+    <main class="page-main">
+      <section class="page-main__foto">
+        <h2 class="visually-hidden">Фотография приложения на телефоне</h2>
+        <img src="https://via.placeholder.com/270x270" alt="Фото приложения на телефоне" width="270" height="270">
+      </section>
+      <section class="download">
+        <h2 class="visually-hidden">Скачать приложение</h2>
+        <a class="download-link">Скачать приложение</a>
+        <ul class="download-list">
+          <li class="download-item download-item--apple">
+            <a href="https://www.apple.com/ios/app-store/" aria-label="App Store"></a>
+          </li>
+          <li class="download-item download-item--android">
+            <a href="https://play.google.com/store?hl=ru" aria-label="Google Play"></a>
+          </li>
+          <li class="download-item download-item--windows">
+            <a href="https://www.microsoft.com/ru-ru/store/apps/windows" aria-label="Microsoft Store"></a>
+          </li>
+        </ul>
+        <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+      <section class="features">
+        <h2 class="visually-hidden">Наши возможности</h2>
+        <div class="features__slogan">
+          <p>Устали от серости мегаполиса?</p>
+          <p>Нам есть, что вам предложить!</p>
+        </div>
+        <ul class="features__list">
+          <li class="features__item">
+            <h3 class="features__item-title">Поднимает настроение</h3>
+            <p class="features__item-text">
+              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            </p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__item-title">Меняет мир вокруг</h3>
+            <p class="features__item-text">
+              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+            </p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__item-title">Заводит новых друзей</h3>
+            <p class="features__item-text">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            </p>
+          </li>
+        </ul>
+        <div class="features__photo">
+          <img src="https://via.placeholder.com/150x300" width="150" height="300" alt="Всем привет">
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+    </footer>
   </body>
 </html>
