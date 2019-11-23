@@ -32,34 +32,113 @@
       <h2 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
     </header>
     <main  class="page-main">
-      <h2 class="visually-hidden">главная страница конкурс</h2>
+      <h2 class="visually-hidden">Главная страница конкурс</h2>
+      <form class="survey" action="https://echo.htmlacademy.ru/">
+        <p class="survey__promo">
+          Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+        </p>
+        <fieldset class="survey__group survey__group--user">
+          <div class="survey__item">
+            <label class="survey__label" for="surname">Фамилия:</label>
+            <input class="survey__field" id="surname" name="surname" type="text" placeholder="Укажите фамилию *" required>
+          </div>
+          <div class="survey__item">
+            <label class="survey__label" for="name">Имя:</label>
+            <input class="survey__field" id="name" name="name" type="text" placeholder="Введите ваше имя *" required>
+          </div>
+          <div class="survey__item">
+            <label class="survey__label" for="patronimic">Отчество:</label>
+            <input class="survey__field" id="patronimic" name="mpatronimic" type="text" placeholder="Ну и отчество тоже">
+          </div>
+        </fieldset>
+        <fieldset class="survey__group survey__group--achievement">
+          <legend class="survey__legend">Ваши безбашенные достижения в путешествии</legend>
+          <div class="survey__item">
+            <input class="survey__checkbox" id="selfie" name="selfie" type="checkbox" checked>
+            <label class="survey__checkbox-label" for="selfie">Сделал селфи с акулой</label>
+          </div>
+          <div class="survey__item">
+            <input class="survey__checkbox" id="burnt" name="burnt" type="checkbox" checked>
+            <label class="survey__checkbox-label" for="burnt">Обгорел на пляже</label>
+          </div>
+          <div class="survey__item">
+            <input class="survey__checkbox" id="chuck" name="chuck" type="checkbox">
+            <label class="survey__checkbox-label" for="chuck">Видел Чака Норриса</label>
+          </div>
+          <div class="survey__item">
+            <input class="survey__checkbox" id="gifts" name="gifts" type="checkbox">
+            <label class="survey__checkbox-label" for="gifts">Накупил сувениров</label>
+          </div>
+          <div class="survey__item">
+            <input class="survey__checkbox" id="tower" name="tower" type="checkbox" checked>
+            <label class="survey__checkbox-label" for="tower">Удержал башню</label>
+          </div>
+          <div class="survey__item">
+            <input class="survey__checkbox" id="hotel" name="hotel" type="checkbox">
+            <label class="survey__checkbox-label" for="hotel">Разгромил отель</label>
+          </div>
+        </fieldset>
+        <fieldset class="survey__group survey__group--contacts">
+          <div class="survey__item">
+            <label class="survey__label" for="tel">Номер телефона</label>
+              <input class="survey__field" id="tel" name="tel" type="tel" placeholder="Номер, пожалуйста">
+          </div>
+          <div class="survey__item">
+            <label class="survey__label" for="email">Адрес почты</label>
+            <input class="survey__field" id="email" name="email" type="email" placeholder="Введите почту *" required>
+          </div>
+        </fieldset>
+       <fieldset class="survey__group survey__group--application">
+          <legend class="survey__legend">С каким приложением путешествовали?</legend>
+          <div class="survey__item">
+            <input class="survey__radio" type="radio" id="ios" name="system" value="ios" checked>
+            <label class="survey__radio-label" for="ios">Pink для iOS</label>
+          </div>
+          <div class="survey__item">
+            <input class="survey__radio" type="radio" id="android" name="system" value="android">
+            <label class="survey__radio-label" for="android">Pink на Android</label>
+          </div>
+          <div class="survey__item">
+            <input class="survey__radio" type="radio" id="windows" name="system" value="windows">
+            <label class="survey__radio-label" for="windows">Windows Phone</label>
+          </div>
+        </fieldset>
+        <fieldset class="survey__group survey__group--emotions">
+          <legend class="survey__legend">Опишите свои эмоции</legend>
+          <textarea class="survey__textarea">Можно прям в красках, не стесняясь в выражениях</textarea>
+        </fieldset>
+        <button class="survey__buttom" type="submit">Отправить форму</button>
+        <p class="survey__reminder">
+          <b>*</b> - обязательные поля
+        </p>
+      </form>
     </main>
     <footer  class="page-footer">
       <div class="page-footer__wrapper">
-          <div class="page-footer__logo">
-            <a href="index.html">
-              <img src="https://via.placeholder.com/130x50" width="130" height="50" alt="Логотип Pink">
-            </a>
-          </div>
-          <div class="page-footer__social social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__item social__item--tw" aria-label="Мы в твиттере"></a>
-              </li>
-              <li class="social__item">
-                <a class="social__item social__item--fb" aria-label="Мы в фейсбуке"></a>
-              </li>
-              <li class="social__item">
-                <a class="social__item social__item--yt" aria-label="Мы в ютубе"></a>
-              </li>
-            </ul>
-          </div>
-          <div class="page-footer__copyright copyright">
-            <span>Разработано</span>
-            <a class="copyright__link" href="https://htmlacademy.ru" aria-label="HTML academy">
-              <img src="https://via.placeholder.com/40x50" width="40" height="50" alt="Логотип HTML academy">
-            </a>
-          </div>
+        <div class="page-footer__logo">
+          <a href="index.html">
+            <img src="https://via.placeholder.com/130x50" width="130" height="50" alt="Логотип Pink">
+          </a>
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__item social__item--tw" aria-label="Мы в твиттере"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__item social__item--fb" aria-label="Мы в фейсбуке"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__item social__item--yt" aria-label="Мы в ютубе"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <span>Разработано</span>
+          <a class="copyright__link" href="https://htmlacademy.ru" aria-label="HTML academy">
+            <img src="https://via.placeholder.com/40x50" width="40" height="50" alt="Логотип HTML academy">
+          </a>
+        </div>
       </div>
     </footer>
   </body>
